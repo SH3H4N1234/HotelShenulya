@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&family=Dancing+Script:wght@400;600&family=Josefin+Sans&family=Lobster&family=Permanent+Marker&family=Phudu:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue";
+}
+
+/* Hotel Name */
+.logo{
+    opacity: 100%;
+    top: 0%;
+    left: 0%;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+header img{
+    width: 100%;
+    height: 650px;
+}
+h1{
+    font-size: 400%;
+    font-family: "Barlow";
+    
+}
+/* Navigation */
+nav ul{
+    position: absolute;
+    top: 3%;
+    margin-left: 30%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    list-style: none;
+    justify-content: space-between;
+    border-right: 3px solid rgb(8, 8, 8);
+    
+    
+
+}
+nav ul :hover{
+    background-color: rgba(191, 214, 203, 0.774);
+    border-radius: 50%;
+    transition: 0.8s;
+}
+nav ul a{
+    font-size: 300%;
+    text-decoration: none;
+    color: rgb(216, 153, 70);
+}
+/* Description */
+.topic{
+    font-size: 350%;
+    text-align: center;
+    font-family: "Lobster";
+}
+.des1{
+    margin: 0% 10%;
+    font-size: 200%;
+    text-align: center;
+    font-family: "Barlow";
+}
+h3{
+    
+    font-size: 200%;
+    text-align: center;
+}
+.About{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Images */
+.images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.images img{
+    width: 250px;
+    height: 250px;
+}
+/* Footer */
+footer{
+    font-size: 125%;
+    gap: 75%;
+    display: flex;
+    flex-direction: row;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+.roomlabel{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+.memberlabel{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+.datelabel{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+.wifilabel{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+#durationDays{
+    border: #000000 solid 1px;
+    height: 20px;
+    width: 90px;
+}
+.viewlabel{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+.promolabel{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+.activities{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+.pinform{
+    font-family: "Dhurjati";
+    font-size: larger;
+}
+.adult{
+    width: 17%;
+}

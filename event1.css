@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;600&family=Josefin+Sans&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue";
+}
+body{
+    background-color: rgb(179, 140, 90);
+}
+h1{
+    position: absolute;
+    padding-left: 20rem;
+    top: 10%;
+    font-size: 400%
+}
+.logo{
+    opacity: 100%;
+    top: 2.5%;
+    left: 2%;
+    align-items: center;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+}
+.navigation{
+    margin: 0;
+    padding: 2rem 0rem;
+    background-color: rgb(77, 73, 73);
+    display: flex;
+    flex-direction: row;
+}
+.nav1{
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 1rem 30rem;
+}
+.nav2{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 5rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: #701616;
+    align-items: center;
+}
+ul li a:hover{
+    background-color: rgba(8, 25, 156, 0.822);
+    border-radius: 5px ;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.Topic{
+    font-family: "Dancing Script";
+    font-weight: 40px;     
+    padding-left: 40%;
+    font-size: 350%;
+}
+.des{
+    font-family: "Josefin Sans";
+    font-size: 150%;
+    padding-left: 30%;
+}
+.image{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+p{
+    font-family: "Josefin Sans";
+    font-size: 200%;
+    padding: 60px;
+
+}
+/* Footer */
+footer{
+    padding: 20px 0px;
+    background-color: gray;
+    font-size: 125%;
+    gap: 65%;
+    display: flex;
+    flex-direction: row;
+}
+footer p{
+    font-size: 80%;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta name="description" content="Hotel Shenulya">
+        <title>Booking page</title>
+        <link rel="stylesheet" href="reservation.css">
+        <script src="main.js" defer></script>
+        
+    </head>
+    <body>
+        <!-- Hotel logo -->
+        <header>
+            <img src="./Reserve.jpg" alt="reserve image">
+
+            <p><a href="index.html"><img src="./logo.png" class="logo" alt="logoimg"></a></p>
+
+        <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home </a></li>
+                    <li><a href="./branches.html">Branches </a></li>
+                    <li><a href="./Restaurant.html">Restaurants </a></li>
+                    <li><a href="./Adventures.html">Adventures </a></li>
+                    <li><a href="./Reservation.html">Reservation </a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Room Booking</h1>
+        <form id="roomBookingForm">
+            <fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="pinform">Full Name :</label>
+                    <input type="text" id="fullName" placeholder="Enter the full name">
+                    <label class="pinform">Mobile :</label>
+                    <input type="number" id="mobileId" placeholder="Enter the mobile number"><br><br>
+                    <label class="pinform">E-mail :</label>
+                    <input type="text" id="emailId" placeholder="Enter your E-mail address">
+                </fieldset>
+                <fieldset>
+                    <legend>Room selection</legend>
+                    <input type="radio" id="single" name="roomType" value="single">
+                    <label class="roomlabel">Single</label><br>
+                    <label class="roomlabel">Number of Rooms : </label>
+                    <input type="number" name="roomType" id="numberofrooms1" value="0" min="1" placeholder="Enter number of rooms"><br>
+                    <input type="radio" id="double" name="roomType" value="double">
+                    <label class="roomlabel">Double</label><br>
+                    <label class="roomlabel">Number of Rooms : </label>
+                    <input type="number" name="roomType" id="numberofrooms2" value="0" min="1" placeholder="Enter number of rooms"><br>
+                    <input type="radio" id="triple" name="roomType" value="triple">
+                    <label class="roomlabel">Triple</label><br>
+                    <label class="roomlabel">Number of Rooms : </label>
+                    <input type="number" name="roomType" id="numberofrooms3" value="0" min="1" placeholder="Enter number of rooms"> <br>
+                    <label class="roomlabel" id="roomlbl">Extra Bed : </label>
+                    <input type="number" name="roomType" min="0" max="3" id="extraBed">
+                </fieldset> 
+                <fieldset>
+                    <legend>Number of Members</legend>
+                    <label class="memberlabel">Number of Adults :</label>
+                    <input type="number" name="numofMembers" id = "numberofadults" min="1">
+                    <label class="memberlabel">Number of Children(Below 5 years of age) :</label>
+                    <input type="number" name="numofMembers" id = "numberofchildren(below5)" min="0"> <br>
+                    <label class="memberlabel">Number of Children(Above 5 years of age) :</label>
+                    <input type="number" name="numofMembers" id = "numberofchildren(above5)" min="0">
+                    <label class="memberlabel">Number of Members :</label>
+                    <input type="text" id="memberOutput" value="0">
+                </fieldset>
+                <fieldset>
+                    <legend>Time Duration</legend>
+                    <label class="datelabel">Entrance date :</label>
+                    <input type="date" id = "entrancedate" name="timeDuration">
+                    <label class="datelabel">Leaving date :</label>
+                    <input type="date" id="leavingdate" name="timeDuration">
+                    <label class="datelabel">Duration Period :</label>
+                    <input type="number" name="duration" id="durationDays" value="0" readonly>
+                </fieldset>
+                <fieldset>
+                    <legend>Extra requirement</legend>
+                    <input type="checkbox" id="wifiId" name="extraReq" value="wifi">
+                    <label class="wifilabel" >WiFi</label><br>
+                    <label>Different View :</label><br>
+                    <input type="radio" name="extraReq" id="poolView" value="poolView">
+                    <label class="viewlabel">Pool View</label>
+                    <input type="radio" name="extraReq" id="gardenView" value="gardenView">
+                    <label class="viewlabel">Garden View</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Promo Code</legend>
+                    <label class="promolabel">Enter promo code :</label>
+                    <input type="text" id="promocode" >
+                </fieldset>
+                <fieldset>
+                    <legend>Current Balance</legend><br><br>
+                    <p id="currentcost"></p>
+                    <p id="output3"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Confirmation</legend>
+                    <input type="button" id = "booknow" value="Book now">
+                    <input type="button" id = "resetform" value="Reset Form">
+                    <input type="button" id = "checkloyalty" value="Check Loyalty">
+                    <input type="button" id = "addfav" value="Add to favourite"><br><br>
+                </fieldset>
+            </fieldset>
+        </form>
+        <h1>Adventure Booking</h1>
+        <form id="adventureBookingForm">
+            <fieldset>
+                <fieldset>
+                    <legend>Other Activities</legend>
+                    <label class="activities" >Diving for local adults per hour: </label>
+                    <input type="number" name="otheractivities" value="0" id="divlocaladult" min="0" placeholder="Enter the number of adults" class="adult"><br><br>
+                    <label class="activities">Diving for local kids (above 5 years): </label>
+                    <input type="number" name="otheractivities" value="0" id="divlocalkid" min="0" placeholder="Enter the number of kids"><br><br>
+                    <label class="activities">Diving for Foreign adults: </label>
+                    <input type="number" name="otheractivities" value="0" id="divforeignadult" min="0" placeholder="Enter the number of adults" class="adult"><br><br>
+                    <label class="activities">Diving for Foreign kids: </label>
+                    <input type="number" name="otheractivities" value="0" id="divforeignkid" min="0" placeholder="Enter the number of kids"><br><br><br>
+                    <label class="activitiesguide"><b>If you need a guide during diving </b></label>
+                    <label class="activitiesguide"><br><br> Following cost will charge : </label><br><br>
+                    <label class="activities">Adult(Rs.1000)</label>
+                    <input type="number" name="otheractivities" id="guideadult" value="0"><br><br>
+                    <label class="activities">Kids(Rs.500)</label>
+                    <input type="number" name="otheractivities" id="guidekid" value="0">
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="pinform">Full Name :</label>
+                    <input type="text" id="fullName2" placeholder="Enter the full name">
+                    <label class="pinform">Mobile :</label>
+                    <input type="number" id="mobileId2" placeholder="Enter the mobile number"><br><br>
+                    <label class="pinform">E-mail :</label>
+                    <input type="text" id="emailId2" placeholder="Enter your E-mail address">
+                </fieldset>
+                <fieldset>
+                    <legend>Current Balance</legend>
+                    <p id="currentcost2"></p><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Confirmation</legend>
+                    <input type="button" name="bookadventure" value="Book Adventure">
+                    <input type="button" id="resetform2" value="Reset Form">
+                    <input type="button" id="addfav2" value="Add to favourite"><br><br>
+                    
+                </fieldset>
+            </fieldset>
+        </form>
+    </body>
+</html>
